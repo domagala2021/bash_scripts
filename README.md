@@ -68,3 +68,10 @@
 #
 # git commit -m "Zmiana uprawnień do pliku - executable script"
 # git push --set-upstream origin B0001-passing_arguments
+#
+# --------------------------------------------------------------------------------------------------
+# INSTALACJA gitk - NARZĘDZIE GRAFICZNE DO PRZEGLĄDANIA HISTORII COMMITÓW (revision tree visualizer)
+# --------------------------------------------------------------------------------------------------
+#
+# sudo apt-get update
+# sudo apt-get -y install gitk
