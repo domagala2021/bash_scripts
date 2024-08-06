@@ -5,7 +5,8 @@
 # przy użyciu zmiennych specjalnych (special parameters)
 # i wypisuje je na standardowe wyjście (standard output)
 #
-# 
+# Zastosowana pętla for posiada składnie jak w języku C (C-style for loop)
+# i została zbudowana z wykorzystaniem elementu składni Basha - podwójnego nawiasu okrągłego (README_komendium.txt/1)
 
 if [ $# -eq 0 ]; then
     echo "Nie podano żadnych argumentów"
