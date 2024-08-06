@@ -24,3 +24,6 @@ do
     echo "argument nr $lp:" $arg
     lp=$((lp + 1))
 done
+
+# Wywołania:
+# ./01-passing_arguments.sh 90 file.txt user@gmail.com
