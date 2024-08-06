@@ -70,30 +70,30 @@ Negacja bitowa (~)
 Przesunięcie bitowe w lewo (<<)
 Przesunięcie bitowe w prawo (>>)
 
-2.6 Operatory przekierowania
+2.6 Operatory przekierowania (Redirect operators)
 
 Operatory przekierowania w Bashu pozwalają na elastyczne zarządzanie danymi wejściowymi i wyjściowymi, co jest niezbędne do efektywnego pisania skryptów i zarządzania danymi w systemie operacyjnym. 
 Pozwalają one na przekierowanie danych między plikami, strumieniami i poleceniami.
 
-2.6.1 Przekierowanie wyjścia (>)
+2.6.1 Przekierowanie wyjścia (>) (Regular output > operator / Output redirector)
 
 Przekierowuje standardowe wyjście (stdout) do pliku, nadpisując jego zawartość. 
 Jeśli plik nie istnieje, zostanie utworzony.
 echo "Hello, World!" > output.txt
 
-2.6.2 Przekierowanie wyjścia (>>)
+2.6.2 Przekierowanie wyjścia (>>) (Regular output append >> operator)
 
 Przekierowuje standardowe wyjście do pliku, dodając dane na końcu pliku (append). 
 Jeśli plik nie istnieje, zostanie utworzony.
 echo "Append this line" >> output.txt
 
-2.6.3 Przekierowanie wejścia (<)
+2.6.3 Przekierowanie wejścia (<) (Regular input < operator)
 
 Przekierowuje standardowe wejście (stdin) z pliku. 
 Używane, gdy chcesz, aby program odczytywał dane z pliku zamiast z klawiatury.
 sort < input.txt
 
-2.6.4 Przekierowanie błędów (2>)
+2.6.4 Przekierowanie błędów (2>) (Regular error 2> operator)
 
 Przekierowuje standardowy strumień błędów (stderr) do pliku, nadpisując jego zawartość.
 ls non_existing_file 2> error.log
@@ -117,7 +117,7 @@ Przekierowuje zarówno standardowe wyjście, jak i standardowy strumień błęd�
 command &>> output_and_errors.log
 W tym przykładzie zarówno standardowe wyjście, jak i błędy zostaną dodane na końcu pliku output_and_errors.log.
 
-2.6.8 Przekierowanie strumieni do i z procesów (|)
+2.6.8 Przekierowanie strumieni do i z procesów (|) (Pipe | operator)
 
 Przekierowuje standardowe wyjście jednego polecenia jako standardowe wejście do innego polecenia. 
 To jest znane jako pipe.
