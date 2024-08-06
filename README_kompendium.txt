@@ -1,6 +1,9 @@
 1. Nawiasy okrągłe
 
+1.1 Podwójne nawiasy okrągłe
+
 Podwójne nawiasy okrągłe (( ... )) w Bashu służą do:
+
 - operacji arytmetycznych		    (operatory: =, +, -, *, /, %, +=, -=, *=, /=)
 - porównań numerycznych			    (operatory: ==, !=, <, >, <=, >=),
 - inkrementacji i dekrementacji		(operatory: ++, --)
@@ -12,3 +15,9 @@ Podwójne nawiasy okrągłe (( ... )) w Bashu służą do:
 
 Średniki w Bashu są używane do oddzielenia komend w jednej linii.
 Znajduje to zastosowanie w pętli for mającej składnie języka C (C-style for loop)
+
+1.2 Pojedyncze nawiasy okrągłe
+
+1.2.1 Podstawianie wyniku polecenia (command substitution)
+
+Polecenia zawarte w wyrażeniu $( ... ) są wykonywane, a ich wynik jest podstawiany w miejscu wyrażenia.
