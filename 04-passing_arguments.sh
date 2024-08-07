@@ -19,7 +19,7 @@ fi
 
 for arg in $@
 do
-    position=$(expr index "$arg" "$char")
+    position=$(expr index "$arg" "$char") # README_kompendium.txt/1.2.1
     if [ $position -ne 0 ]; then
         echo ${arg:0:$position-1}
     fi
