@@ -7,7 +7,7 @@ fi
 
 for arg in $@
 do
-    line_count=$(wc -l < $arg) # README_kompendium.txt/1.2.1
+    line_count=$(wc -l < $arg) # README_kompendium.txt/1.2.1 README_kompendium.txt/2.6.3
     echo "Plik $arg zawiera: $line_count linii."
 done
 

@@ -12,7 +12,7 @@ echo "Liczba przekazanych argumentów: $#"
 
 echo -e
 
-if [ $# -eq 0 ]; then
+if [ $# -eq 0 ]; then #README_kopendium.txt/2.2.1
     echo "Nie podano żadnych argumentów"
     exit 1
 fi
