@@ -11,6 +11,7 @@
 # Tym samym analizowane są tylko argumenty zawierające znak "="
 
 char="="
+temp_filename="env_variables.txt"
 
 if [ $# -eq 0 ]; then
     echo "Nie podano żadnych argumentów"
@@ -21,9 +22,12 @@ for arg in $@
 do
     position=$(expr index "$arg" "$char") # README_kompendium.txt/1.2.1
     if [ $position -ne 0 ]; then #README_kopendium.txt/2.2.1
-        echo ${arg:0:$position-1}
+        echo ${arg:0:$position-1} >> $temp_filename
     fi
 done
+
+sort < $temp_filename
+rm $temp_filename
 
 
 # Wywołania:
