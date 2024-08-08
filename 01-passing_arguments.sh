@@ -14,6 +14,7 @@ echo -e
 
 if [ $# -eq 0 ]; then #README_kopendium.txt/2.2.1
     echo "Nie podano żadnych argumentów"
+    echo "./01-passing_arguments.sh 90 file.txt user@gmail.com"
     exit 1
 fi
 
@@ -24,6 +25,3 @@ do
     echo "argument nr $lp:" $arg
     lp=$((lp + 1)) # README_komendium.txt/1.1
 done
-
-# Wywołania:
-# ./01-passing_arguments.sh 90 file.txt user@gmail.com

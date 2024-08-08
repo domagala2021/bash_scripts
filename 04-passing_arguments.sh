@@ -15,6 +15,7 @@ temp_filename="env_variables.txt"
 
 if [ $# -eq 0 ]; then
     echo "Nie podano żadnych argumentów"
+    echo "./04-passing_arguments.sh \$(env)"
     exit 1
 fi
 
@@ -28,7 +29,3 @@ done
 
 sort < $temp_filename
 rm $temp_filename
-
-
-# Wywołania:
-# ./03-passing_arguments.sh $(env)

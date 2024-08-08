@@ -10,6 +10,7 @@
 
 if [ $# -eq 0 ]; then
     echo "Nie podano żadnych argumentów"
+    echo "./02-passing_arguments.sh 8 9 0 7"
     exit 1
 fi
 
@@ -22,6 +23,3 @@ do
     echo "argument nr $i: $arg2"
     echo
 done
-
-# Wywołania:
-# ./02-passing_arguments.sh 8 9 0 7
