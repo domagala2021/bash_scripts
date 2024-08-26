@@ -25,5 +25,6 @@ lp=1
 
 for arg in $@
 do
-    echo $arg
+    echo "argument nr $lp:" $arg
+    lp=$((lp + 1)) # README_komendium.txt/1.1
 done
