@@ -18,6 +18,8 @@ if [ $# -eq 0 ]; then #README_kopendium.txt/2.2.1
     exit 1
 fi
 
+echo $@
+
 lp=1
 
 for arg in $@
