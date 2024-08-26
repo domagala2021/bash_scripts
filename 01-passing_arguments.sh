@@ -19,6 +19,7 @@ if [ $# -eq 0 ]; then #README_kopendium.txt/2.2.1
 fi
 
 echo $@
+echo -e
 
 lp=1
 
