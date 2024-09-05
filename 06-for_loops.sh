@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-backup_dir="/home/domagala2021/bash_scripts/backup"
+backup_dir="backup"
 
 if [ ! -d "$backup_dir" ]; then
     mkdir $backup_dir
