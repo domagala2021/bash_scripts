@@ -2,12 +2,15 @@
 
 
 backup_dir="backup"
+prefix=$(date +"%Y%m%d_")
 
 if [ ! -d "$backup_dir" ]; then
     mkdir $backup_dir
 fi
 
-for file in *.*
+    for file in *.*
 do
-    cp $file $backup_dir
+    cp $file "$backup_dir/$prefix$file"
+    # echo "$prefix$file"
+
 done
