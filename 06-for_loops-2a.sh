@@ -10,5 +10,9 @@ fi
 
 for file in $(ls $current_dir)
 do
-    cp "$current_dir/$file" "$backup_dir/$prefix$file"
-    # echo "$prefix$file"
+    if [ -f $file ]; then
+        cp "$current_dir/$file" "$backup_dir/$prefix$file"
+        # echo "$prefix$file"
+    fi
+
+done
